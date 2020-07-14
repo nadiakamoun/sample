@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Doc title</title>
+    <script src="https://kit.fontawesome.com/9dc9fe111b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <!-- aria-label attribute for anchor tag <a>:  giving screen readers the ability to tell somebody where this link is going to go to read a label, and this is huge in terms of accessibility. -->
+      <a href="https://learn.shayhowe.com/html-css/" aria-label="HTML tutorial"><i class="fab fa-html5 fa-2x"></i></a><strong> HTML course</strong>
+    </header>
+    <main>
+      <h3>Summary table</h3>
+      <nav> <!--The <nav> element defines a section of navigation links that go to other parts of my site.-->
+        <ol>
+          <li><a href="#Tutorials">Tutorials</a></li><!--relative reference link. #xxx link to a location in the same file-->
+          <li><a href="#Attributes">Attributes</a></li>
+          <li><a href="#Special%20entities">Special entities</a></li>
+          <li><a href="#Attributes">Figures, video & audio elements</a></li>
+        </ol>
+      </nav>
+      <h3>Tutorials</h3>
+      <ul>
+       <li><a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML & CSS</a></li> <!--absolute reference link-->
+       <li><a href="https://validator.w3.org/">W3C validator</a></li>
+       <li><a href="https://www.tutorialrepublic.com/html-reference/html5-tags.php">HTML5 Tags/Elements</a></li>
+      </ul>
+      <h3>HTML5 new tags</h3>
+      <table> <!--rowspan colspan-->
+        <tr><th>Structural elements</th><td> article, aside, main, menuitem, summary, section</td></tr> 
+        <tr><th>Form elements</th><td>datalist, keygen, output</td></tr> 
+        <tr><th>Input types</th><td>colorn date, email, list</td></tr> 
+        <tr><th>Graphic elements</th><td>canvas, svg</td></tr>
+        <tr><th>Media elements</th><td>audio, embed, source, track, video</td></tr> 
+      </table>
+      <h3>Attributes</h3>
+      <ul>
+        <li>id</li> 
+        <li>style --> to avoid !</li> 
+        <li>accesskey</li> 
+        <li>tabindex</li> 
+      </ul>
+      <h3>Special entities</h3>
+      <p>
+        &lt; &gt; &copy; 
+        &nbsp; <!--blank space-->
+        &cent; &amp; 
+      </p>
+      <h3>Figures, video & audio elements</h3>
+       <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/424px-HTML5_logo_resized.svg.png" alt="HTML" title="HTML" class="thumbnail" width=50>
+        <figcaption>
+          <a href="_blank">Hypertext Markup Language</a><!--target attribute for anchor tags: _self, _blank, _top, _parent-->
+        </figcaption>
+      </figure>
+      <!-- video element 
+      Attributes: source, height, width, autoplay, loop, controls
+      Video begins at a particular time: 
+      .ext#t=5,25 (video plays from 5 to 25seconds)
+      -->
+      <video src="Wildlife.wmv" autoplay>Video</video>
+      <br> <!--Line break-->
+      <!-- audio element. Attributes: autoplay, loop, controls, buffered, muted, volume-->
+      <audio src="perfect-time.mp3" controls>Audio</audio> 
+    </main>
+    <footer>
+      &copy; 2020 by Nadia Kamoun  
+    </footer>
+  </body>
+</html>
